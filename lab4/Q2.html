@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings</h1>
+    <label>Enter a string: </label>
+    <input type="text" id="str" name="str">
+    <button onclick="vowel()">Vowel</button>
+    <br>
+    <label id="output1">Output</label>
+    <br>
+    <br>
+    <label>Enter a number: </label>
+    <input type="number" id="num" name="num">
+    <button onclick="palindrome()">Palindrome</button>
+    <br>
+    <label id="output2">Output</label>
+    <script>
+        function vowel()
+        {
+            var str=document.getElementById("str").value;
+            var pos=0;
+            for (var i=0; i<str.length; i++)
+            {
+                if (str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+                {
+                    pos=i;
+                    break;
+                }
+            }
+            var output= document.getElementById("output1");
+            output.innerHTML = "The first vowel is at position " + (pos);
+        }
+        function palindrome()
+        {
+            var num=document.getElementById("num").value;
+            var temp=num;
+            var rev=0;
+            while (Math.floor(num)>0)
+            {
+                var rem=Math.floor(num%10);
+                rev=rev*10+rem;
+                num=Math.floor(num/10);
+            }
+            var out=document.getElementById("output2");
+            out.innerHTML="The reverse of " + temp + " is " + rev;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>USN</h1>
+    <label>Enter USN number: </label>
+    <input type="text" id="USN">
+    <button onclick="check()">Check</button>
+    <script>
+        function check()
+        {
+        var txt=document.getElementById("USN").value;
+        var ch0=txt.charAt(0);
+        if (ch0>='1'&&ch0<='4')
+        {
+            var ch1=txt.charAt(1);
+            if (ch1== ch1.toUpperCase())
+            {
+                var ch2=txt.charAt(2);
+                if (ch2==ch2.toUpperCase())
+                {
+                    var ch3=txt.charAt(3);
+                    if (ch3>='0' && ch3<='9')
+                    {
+                        var ch4=txt.charAt(4);
+                        if (ch4>='0' && ch4<='9') 
+                        {
+                            var ch5=txt.charAt(5);
+                            if (ch5==ch5.toUpperCase())
+                            {
+                                var ch6=txt.charAt(6);
+                                if(ch6==ch6.toUpperCase())
+                                {
+                                    var ch7=txt.charAt(7);
+                                    if (ch7>='0' && ch7<='9')
+                                    {
+                                        var ch8=txt.charAt(8);
+                                        if (ch8>='0' && ch8<='9')
+                                        {
+                                            var ch9=txt.charAt(9);
+                                            if (ch9>='0' && ch9<='9')
+                                            {
+                                                alert ("Valid Input");
+                                            }
+                                            else
+                                            {
+                                                alert("Invalid input");
+                                            }  
+                                        }
+                                        else
+                                        {
+                                            alert("Invalid input");
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        alert("Invalid input");
+                                    }
+
+                                }
+                                else
+                                {
+                                    alert("Invalid input");
+                                }
+                            }
+                            else
+                            {
+                                alert("Invalid input");
+                            }   
+                        }
+                        else
+                        {
+                            alert("Invalid input");
+                        }
+
+                    }
+                    else
+                    {
+                        alert("Invalid input");
+                    }
+                }
+                else
+                {
+                    alert("Invalid input");
+                }
+            }
+            else
+            {
+                alert("Invalid input");
+            }
+
+        }
+        else
+        {
+            alert("Invalid input");
+        }
+    }
+
+    </script>
+
+</body>
+</html>

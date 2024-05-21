@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        var red="red";
+        var blue="blue";
+        fontsize=5;
+        flag=0; 
+        var grow="Text-Growing";
+        var shrink="Text-Shrinking";
+        function increaseSize()
+        {
+            if(flag==0)
+            {
+                document.getElementById("text").style.color=red;
+                document.getElementById("text").style.fontSize=fontsize+"px";
+                document.getElementById("text").innerText=grow;
+                fontsize++;
+                if(fontsize>=50)
+                {
+                    flag=1;
+                }
+            }
+            else
+            {
+                document.getElementById("text").style.color=blue;
+                document.getElementById("text").style.fontSize=fontsize+"px";
+                document.getElementById("text").innerText=shrink;
+                fontsize--;
+                if(fontsize<=5)
+                {
+                    flag=0;
+                }
+            }
+            setTimeout(increaseSize,100)
+        }
+       increaseSize();
+    </script>
+</body>
+</html>

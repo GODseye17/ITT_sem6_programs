@@ -1,0 +1,14 @@
+body{
+    background-color: antiquewhite;
+}
+table{
+    border: 2px dotted rgb(10, 139, 245);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+ol{
+    padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}

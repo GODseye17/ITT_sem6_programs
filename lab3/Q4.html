@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Word Game</h3>
+    <label>Enter the 5 letter Word: </label>
+    <input type="text" id="text" placeholder="Enter the Word">
+    <br>
+    <button onclick="words()">Generate Words</button>
+    <script>
+        
+        function words()
+        {
+            var input=document.getElementById("text").value;
+            var length=input.length;
+            //generate all 3 letter words from the given word
+            for(var i=0;i<length;i++)
+            {
+                for(var j=0;j<length;j++)
+                {
+                    for(var k=0;k<length;k++)
+                    {
+                        if(i!=j && j!=k && k!=i)
+                        {
+                            document.write(input.charAt(i)+input.charAt(j)+input.charAt(k)+"<br>");
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

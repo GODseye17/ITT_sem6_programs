@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="link1" rel="stylesheet" href="Q3style.css">
+</head>
+<body>
+    <p id="para1" onmouseover="top1()" onmouseout="normal()">This is the first paragraph. This should be at the top of the stack. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam in repellat atque veniam officia odit at ipsa possimus? Tempora fuga eum nobis eveniet! Molestias ex assumenda praesentium tenetur suscipit aut.
+    Quas temporibus aliquid asperiores, placeat impedit maxime velit at cumque? Facilis, hic inventore odit minus incidunt tenetur illum optio voluptas nihil asperiores beatae fuga expedita, distinctio ipsam nostrum, labore recusandae.</p>
+    <p id="para2" onmouseover="top2()" onmouseout="normal()">This is the second paragraph. This should be in the middle of the stack. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto, ratione pariatur id unde reiciendis excepturi est cupiditate, ab dicta aspernatur voluptatem sed quis in nihil eligendi voluptate, praesentium saepe.
+    Culpa, perspiciatis, labore adipisci, atque laborum dicta saepe accusantium magni suscipit vero incidunt assumenda! Sint excepturi totam animi at tempore. Perferendis illum a quas et explicabo autem corrupti? Eius, sunt.</p>
+    <p id="para3" onmouseover="top3()" onmouseout="normal()">This is the third paragraph. This should be at the bottom of the stack. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eum fugit eligendi ratione quia repellat soluta libero dolorum? Ipsam consequatur earum illo natus rerum maxime accusantium cum assumenda id culpa.
+    Distinctio deleniti cumque temporibus nemo ipsum fuga et doloremque soluta quidem natus delectus eveniet rerum, nobis debitis corporis quibusdam suscipit consequuntur dignissimos asperiores! Illum corrupti dolorem quisquam est culpa rerum.</p>
+    <script>
+        function top1()
+        {
+            document.getElementById("para1").style.zIndex="3";
+            document.getElementById("para2").style.zIndex="2";
+            document.getElementById("para3").style.zIndex="1";
+            
+        }
+        function top2()
+        {
+            document.getElementById("para1").style.zIndex="2";
+            document.getElementById("para2").style.zIndex="3";
+            document.getElementById("para3").style.zIndex="1";
+        }
+        function top3()
+        {
+            document.getElementById("para1").style.zIndex="2";
+            document.getElementById("para2").style.zIndex="1";
+            document.getElementById("para3").style.zIndex="3";
+        }
+        function normal()
+        {
+            document.getElementById("para1").style.zIndex="3";
+            document.getElementById("para2").style.zIndex="2";
+            document.getElementById("para3").style.zIndex="1";
+        }
+
+
+    </script>
+</body>
+</html>

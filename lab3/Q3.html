@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Phone Number</h2>
+    <label>Enter Phone Number: </label>
+    <input type="text" id="text" placeholder="Enter Phone Number">
+    <br>
+    <button onclick="split()">Split</button>
+    <script>
+        //extract the area code in a separate field and rest of the phone number in another field
+        function split()
+        {
+            var input=document.getElementById("text").value;
+            var arr=input.split("-");
+            var area=arr[0];
+            var rest=arr[1];
+            document.write("<br>");
+            document.write("Area Code: "+area);
+            document.write("<br>");
+            document.write("Phone Number: "+rest);
+        }
+
+        /*var input=document.getElementById("text").value;
+        var arr=input.split("-");
+        var area=arr[0];
+        var rest=arr[1];
+        document.write("Area Code: "+area);
+        document.write("<br>");
+        document.write("Phone Number: "+rest);*/
+    </script>
+
+</body>
+</html>

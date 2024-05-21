@@ -1,0 +1,24 @@
+#para1
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    background-color: aqua;
+}
+#para2
+{
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    z-index: 2;
+    background-color: aquamarine;
+}
+#para3
+{
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    z-index: 1;
+    background-color: bisque;
+}

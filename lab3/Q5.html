@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Squares and Cubes</h3>
+    <button onclick="squares()">Squares</button>
+    <table id="table">
+        <tr>
+            <th>Number</th>
+            <th>Square</th>
+            <th>Cube</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td id="square1"></td>
+            <td id="cube1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="square2"></td>
+            <td id="cube2"></td>  
+        </tr>
+        <tr>
+            <td>3</td>
+            <td id="square3"></td>
+            <td id="cube3"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td id="square4"></td>
+            <td id="cube4"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td id="square5"></td>
+            <td id="cube5"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td id="square6"></td>
+            <td id="cube6"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td id="square7"></td>
+            <td id="cube7"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td id="square8"></td>
+            <td id="cube8"></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td id="square9"></td>
+            <td id="cube9"></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td id="square10"></td>
+            <td id="cube10"></td>
+        </tr>
+    </table>
+    <script>
+        function squares()
+        {
+            for(var i=1;i<=10;i++)
+            {
+                document.getElementById("square"+i).innerText=i*i;
+                document.getElementById("cube"+i).innerText=i*i*i;
+            }
+        }
+    </script>
+</body>
+</html>

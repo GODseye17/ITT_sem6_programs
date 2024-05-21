@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "Q2style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 text-align: center>Pig Latin</h1>
+    <label>Enter Sentence: </label>
+    <input type="text" id="text" placeholder="Enter Sentence">
+    <button onclick="StringtoPigLatin()">Convert</button>
+    <br>
+    <label id="output"></label>
+    <script>
+        function StringtoPigLatin()
+        {
+            var input=document.getElementById("text").value;
+            var arr=input.split(" ");
+            var piglatin="";
+            for(var i=0;i<arr.length;i++)
+            {
+                var word=arr[i];
+                var first=word.charAt(0);
+                var rest=word.substring(1);
+                var newword=rest+first+"ay";
+                piglatin+=newword+" ";
+            }
+            document.getElementById("output").innerText=piglatin;
+        }
+    </script>
+</body>
+</html>

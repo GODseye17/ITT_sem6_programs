@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background</title>
+  <link id="link1" rel="stylesheet" href="Q6style.css">
+</head>
+<body>
+
+
+<div class="color-text" onmouseover="changeColor('red')" onmouseout="changeColor('white')">Red</div>
+<div class="color-text" onmouseover="changeColor('green')" onmouseout="changeColor('white')">Green</div>
+<div class="color-text" onmouseover="changeColor('blue')" onmouseout="changeColor('white')">Blue</div>
+<div class="color-text" onmouseover="changeColor('yellow')" onmouseout="changeColor('white')">Yellow</div>
+
+<script>
+
+  function changeColor(color) {
+    
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>
